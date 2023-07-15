@@ -13,7 +13,12 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <Profile src={user.avatar} />
+      <Profile
+        src={user.avatar}
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+      />
     </div>
   );
 };
