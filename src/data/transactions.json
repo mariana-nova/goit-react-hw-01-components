@@ -1,0 +1,33 @@
+[
+    {
+      "id": "1e0700a2-5183-4291-85cc-2065a036a683",
+      "type": "invoice",
+      "amount": "964.82",
+      "currency": "LRD"
+    },
+    {
+      "id": "ea8ed3dc-2b68-4a53-905a-53ecb0adef33",
+      "type": "withdrawal",
+      "amount": "527.80",
+      "currency": "ALL"
+    },
+    {
+      "id": "4eaab41b-b967-40ac-82ed-85fc66f646f1",
+      "type": "deposit",
+      "amount": "103.10",
+      "currency": "BWP"
+    },
+    {
+      "id": "a30f821b-4d25-4ff0-abdd-e340b3f0dd2b",
+      "type": "payment",
+      "amount": "686.50",
+      "currency": "WST"
+    },
+    {
+      "id": "ea76146a-0b00-4b80-bc02-a8c822176712",
+      "type": "withdrawal",
+      "amount": "371.43",
+      "currency": "MUR"
+    }
+   
+  ]
