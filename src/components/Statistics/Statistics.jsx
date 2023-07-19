@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import './Statistics.css'
 
 function Statistics({title, stats}, Children) {
-    //Fujncion que devuelve una lista de licon datos
+   
     return (
         <section className='statistics'>
             <h3 className='title'>{title}</h3>
@@ -21,7 +21,14 @@ function Statistics({title, stats}, Children) {
 }
 
 Statistics.propTypes = {
-    
-}
+    title: PropTypes.string,
+    stats: PropTypes.arrayOf(
+    PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label:PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+        } )
+    ).isRequired,
+};
 
 export default Statistics;
