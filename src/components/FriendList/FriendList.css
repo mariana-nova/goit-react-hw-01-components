@@ -1,0 +1,29 @@
+.friendlist{
+    margin: 0 auto;
+    list-style: none;
+    margin-top: 30px;
+}
+.FriendItem{
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+.FriendStatus{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    margin-top: 35px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.FriendAvatar{
+    display: inline-flex;
+    margin-right: 30px;
+    margin-top: 10px;
+    height: 70px;
+    width: 70px;
+    margin-top: 15px;
+}
+.FriendName{
+    display: inline-block;
+}
