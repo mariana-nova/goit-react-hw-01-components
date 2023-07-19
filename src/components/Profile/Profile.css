@@ -5,7 +5,6 @@
     border-radius: 20px;
     font-size: 23px;
     justify-content: center;
-    margin-left: 100px;
 }
 
 .avatar {
@@ -33,4 +32,3 @@
 .stats li {
     list-style: none;
 }
-
