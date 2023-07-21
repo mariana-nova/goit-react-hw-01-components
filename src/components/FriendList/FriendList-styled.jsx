@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 export const FriendOnline = styled.ul `
   margin: 0 auto;
   list-style: none;
