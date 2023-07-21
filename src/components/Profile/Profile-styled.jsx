@@ -1,35 +1,33 @@
-.profile {
+import styled from 'styled-components;'
+export const Container= styled.div `
     background-color: bisque;
     width: 300px;
     padding: 20px;
     border-radius: 20px;
     font-size: 23px;
     justify-content: center;
-}
+`;
 
-.avatar {
+export const Imagen= styled.img `
     margin-top: 10px;
     border-radius: 50%;
     background-color: azure;
-}
+    `;
 
-.description {
+export const Description= styled.div`
     text-align: center;
-}
+    `;
 
-.description > p {
-    margin: 5px;
-}
 
-.stats {
+export const Statslist = styled.ul`
     display: flex;
     gap: 15px;
     padding: 0;
     justify-content: center;
     font-size: 20px;
-}
+    `;
 
-.stats li {
+export const Statsitem = styled.li`
     list-style: none;
-}
+`;
 

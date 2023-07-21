@@ -1,6 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
-import './Profile.css';
+import styled from 'styled-components';
+
+const Container = styled.div `
+background-color: bisque;
+width: 300px;
+padding: 20px;
+border-radius: 20px;
+font-size: 23px;
+justify-content: center;
+`;
+const Imagen= styled.img `
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: azure;
+    `;
+const Description= styled.div`
+    text-align: center;
+    `;
+const Statslist = styled.ul`
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    justify-content: center;
+    font-size: 20px;
+    `;
+const Statsitem = styled.li`
+    list-style: none;
+`; 
+
+
 
 function Profile( 
     {
@@ -10,44 +39,48 @@ function Profile(
         location,
         stats:{followers, views, likes}
         //stats
-    },
-    Children ) {
+    } ) {
         return (
-            <div className="profile">
-                <div className="description">
-                    <img src={src} alt="user avatar" className="avatar" width="250px" />
+            <Container>
+                <Description>
+                    <Imagen src={src} alt="user avatar" width="250px" />
                     <p>{username}</p>
                     <p>@{tag}</p>
                     <p>{location}</p>
-                </div>
+                </Description>
 
-                <ul className ="stats">
-                    <li>
+                <Statslist>
+                    <Statsitem>
                         <span className="label">Followers: </span>
                         <br />
                         <span className="quantity"> {followers} </span>
-                    </li>
-                    <li>
+                    </Statsitem>
+                    <Statsitem>
                         <span className="label">Views: </span>
                         <br />
                         <span className="quantity">{views}</span>
-                    </li>
-                    <li>
+                    </Statsitem>
+                    <Statsitem>
                         <span className="label">Likes: </span>
                         <br />
                         <span className="quantity">{likes}</span>
-                    </li>
-                </ul>
-            </div>
+                    </Statsitem>
+                </Statslist>
+            </Container>
             
         );
 }
 
 Profile.propTypes = {
-    src: PropTypes.string,
-    username: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
-}
-
-export default Profile;
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.shape({
+      followers: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
+    }).isRequired,
+  };
+  
+  export default Profile;
