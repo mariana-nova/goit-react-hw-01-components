@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Table = styled.table`
+const Table = styled.table `
   width: 250px;
   margin-left: 10px;
   border-collapse: collapse;
@@ -10,11 +10,11 @@ const Table = styled.table`
   background-color: beige;
 `;
 
-const Td = styled.td`
+const Td = styled.td `
 padding: 8px;
 border: 1px solid gray;
 `;
-const Th = styled.th`
+const Th = styled.th `
   padding: 8px;
   border: 1px solid gray;
   font-weight: bold;

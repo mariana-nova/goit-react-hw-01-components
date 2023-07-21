@@ -10,11 +10,11 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 `;
-const TitlePrin =  styled.h3`
+const TitlePrin =  styled.h3 `
 margin: 0;
 padding: 80px;
 `;
-const StatsStatic = styled.ul`
+const StatsStatic = styled.ul `
     display: flex;
     padding: 0;
     justify-content: center;
@@ -22,7 +22,7 @@ const StatsStatic = styled.ul`
     list-style: none;
     margin: auto 0;
     `;
-    const ItemStatic = styled.li`
+    const ItemStatic = styled.li `
     padding: 10px;
     color: aliceblue;
     background-color: rgb(175, 74, 74);

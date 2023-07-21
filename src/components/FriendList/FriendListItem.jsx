@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from "prop-types";
 
-const FriendLine = styled.li`
+const FriendLine = styled.li `
   margin-bottom: 20px;
   margin: 0 auto;
   `;

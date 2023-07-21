@@ -3,7 +3,7 @@ export const FriendOnline = styled.ul `
   list-style: none;
   margin-top: 30px;
   `;
-export const FriendItem = styled.li `
+export const FriendLine = styled.li `
   margin-bottom: 20px;
   margin: 0 auto;
   `;
