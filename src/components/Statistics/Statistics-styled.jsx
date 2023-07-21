@@ -1,4 +1,4 @@
-import styled from 'styled-components;'
+import styled from 'styled-components';
 export const StatisticsCont = styled.section `
     margin-top: 30px;
     margin-bottom: 40px;
